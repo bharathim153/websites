@@ -42,15 +42,17 @@ export default function Home() {
           Welcome to Iqoniqox where we specialize in revolutionizing your online presence through expert SEO and digital marketing solutions.
         </p>
         <form className="flex flex-col md:flex-row items-center gap-4 bg-white rounded-full shadow-lg px-6 py-4 w-full max-w-4xl animate-fade-in-up delay-300">
-          <div className="flex items-center gap-2 flex-1">
-            <span className="text-[#fea930]">🔗</span>
-            <input type="text" placeholder="https://yoursite.com" className="outline-none border-none bg-transparent flex-1 text-zinc-700" />
+          <div className="flex flex-col sm:flex-row w-full gap-4">
+            <div className="flex items-center gap-2 flex-1">
+              <span className="text-[#fea930]">🔗</span>
+              <input type="text" placeholder="https://yoursite.com" className="outline-none border-none bg-transparent flex-1 text-zinc-700 py-2 px-2 rounded-full min-w-0" />
+            </div>
+            <div className="flex items-center gap-2 flex-1">
+              <span className="text-[#fea930]">✉️</span>
+              <input type="email" placeholder="youremail@domain.com" className="outline-none border-none bg-transparent flex-1 text-zinc-700 py-2 px-2 rounded-full min-w-0" />
+            </div>
           </div>
-          <div className="flex items-center gap-2 flex-1">
-            <span className="text-[#fea930]">✉️</span>
-            <input type="email" placeholder="youremail@domain.com" className="outline-none border-none bg-transparent flex-1 text-zinc-700" />
-          </div>
-          <button type="submit" className="bg-[#f63436] text-white font-semibold px-4 py-3 rounded-full flex items-center gap-2 hover:bg-[#fea930] transition-colors w-[500px]">
+          <button type="submit" className="bg-[#f63436] text-white font-semibold px-4 py-3 rounded-full flex items-center gap-2 hover:bg-[#fea930] transition-colors w-full sm:w-auto mt-4 sm:mt-0">
             Analyze Now 
           </button>
         </form>
@@ -222,30 +224,33 @@ export default function Home() {
           Our Handpicked Digital<br />Marketing <span className="text-[#f63436] underline decoration-[#f63436]/30 decoration-8">Case Study</span>
         </h2>
         {/* Cards Row */}
-        <div className="flex flex-row gap-8 justify-center items-stretch w-full max-w-6xl">
+        <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch w-full max-w-6xl">
           {/* Card 1 */}
-          <div className="relative group rounded-2xl overflow-hidden shadow-lg transition-all duration-500 min-w-[180px] max-w-[180px] h-[340px] hover:min-w-[340px] hover:max-w-[340px] hover:z-20 hover:shadow-2xl hover:scale-105">
+          <div className="relative group rounded-2xl overflow-hidden shadow-lg transition-all duration-500 w-full md:min-w-[180px] md:max-w-[180px] h-[340px] md:hover:min-w-[340px] md:hover:max-w-[340px] md:hover:z-20 md:hover:shadow-2xl md:hover:scale-105">
             <img src="https://seoc-html-v2.vercel.app/assets/img/all-images/case-img1.png" alt="Website Design & Development" className="object-cover w-full h-full" />
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <span className="absolute left-2 top-2 bg-[#ffe3ef] text-[#f63436] px-3 py-1 rounded-full text-xs font-semibold">Website Design & Development</span>
-            <span className="absolute left-[30px] bottom-4 text-white text-lg font-bold rotate-[-90deg] origin-bottom-left">Website Design & Development</span>
+            <span className="absolute left-[30px] bottom-4 text-white text-lg font-bold rotate-[-90deg] origin-bottom-left hidden md:block">Website Design & Development</span>
+            <span className="absolute left-2 bottom-4 text-white text-lg font-bold md:hidden">Website Design & Development</span>
           </div>
           {/* Card 2 */}
-          <div className="relative group rounded-2xl overflow-hidden shadow-lg transition-all duration-500 min-w-[180px] max-w-[180px] h-[340px] hover:min-w-[340px] hover:max-w-[340px] hover:z-20 hover:shadow-2xl hover:scale-105">
+          <div className="relative group rounded-2xl overflow-hidden shadow-lg transition-all duration-500 w-full md:min-w-[180px] md:max-w-[180px] h-[340px] md:hover:min-w-[340px] md:hover:max-w-[340px] md:hover:z-20 md:hover:shadow-2xl md:hover:scale-105">
             <img src="https://seoc-html-v2.vercel.app/assets/img/all-images/case-img2.png" alt="SEO" className="object-cover w-full h-full" />
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <span className="absolute left-2 top-2 bg-[#ffe3ef] text-[#f63436] px-3 py-1 rounded-full text-xs font-semibold">SEO</span>
-            <span className="absolute left-[30px] bottom-4 text-white text-lg font-bold rotate-[-90deg] origin-bottom-left">SEO</span>
+            <span className="absolute left-[30px] bottom-4 text-white text-lg font-bold rotate-[-90deg] origin-bottom-left hidden md:block">SEO</span>
+            <span className="absolute left-2 bottom-4 text-white text-lg font-bold md:hidden">SEO</span>
           </div>
           {/* Card 3 */}
-          <div className="relative group rounded-2xl overflow-hidden shadow-lg transition-all duration-500 min-w-[180px] max-w-[180px] h-[340px] hover:min-w-[340px] hover:max-w-[340px] hover:z-20 hover:shadow-2xl hover:scale-105">
+          <div className="relative group rounded-2xl overflow-hidden shadow-lg transition-all duration-500 w-full md:min-w-[180px] md:max-w-[180px] h-[340px] md:hover:min-w-[340px] md:hover:max-w-[340px] md:hover:z-20 md:hover:shadow-2xl md:hover:scale-105">
             <img src="https://seoc-html-v2.vercel.app/assets/img/all-images/case-img3.png" alt="PPC Advertising" className="object-cover w-full h-full" />
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <span className="absolute left-5 top-2 bg-[#ffe3ef] text-[#f63436] px-3 py-1 rounded-full text-xs font-semibold">PPC Advertising</span>
-            <span className="absolute left-[30px] bottom-4 text-white text-lg font-bold rotate-[-90deg] origin-bottom-left">PPC Advertising</span>
+            <span className="absolute left-[30px] bottom-4 text-white text-lg font-bold rotate-[-90deg] origin-bottom-left hidden md:block">PPC Advertising</span>
+            <span className="absolute left-2 bottom-4 text-white text-lg font-bold md:hidden">PPC Advertising</span>
           </div>
           {/* Card 4 */}
-          <div className="relative group rounded-2xl overflow-hidden shadow-lg transition-all duration-500 min-w-[340px] max-w-[340px] h-[340px]">
+          <div className="relative group rounded-2xl overflow-hidden shadow-lg transition-all duration-500 w-full md:min-w-[340px] md:max-w-[340px] h-[340px]">
             <img src="https://seoc-html-v2.vercel.app/assets/img/all-images/case-img4.png" alt="Social Media Marketing" className="object-cover w-full h-full" />
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <span className="absolute left-2 top-2 bg-[#ffe3ef] text-[#f63436] px-3 py-1 rounded-full text-xs font-semibold">Social Media Marketing</span>
@@ -254,7 +259,7 @@ export default function Home() {
               <div className="text-xs opacity-80">Digital Art. Illustrations</div>
             </div>
             {/* Example icons overlay */}
-            <div className="absolute right-4 top-4 flex flex-col gap-2">
+            <div className="absolute right-4 top-4 flex flex-row md:flex-col gap-2">
               <span className="bg-white/80 rounded-full p-2 text-[#f63436] shadow"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M12 2L15 8H9L12 2Z" fill="#f63436" /></svg></span>
               <span className="bg-white/80 rounded-full p-2 text-[#fea930] shadow"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6" fill="#fea930" /></svg></span>
               <span className="bg-white/80 rounded-full p-2 text-[#0053a1] shadow"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" fill="#0053a1" /></svg></span>
