@@ -35,27 +35,14 @@ export default function Home() {
             Top #1 SEO & Marketing Agency
           </span>
         </div>
-        <h1 className="text-5xl md:text-6xl font-bold text-center text-black mb-4 animate-slide-in-left delay-100">
-          Local SEO Tactics To<br></br> <span className="text-[#f63436] underline decoration-[#fea930]/30 decoration-8">Dominate</span> Your Market
+        <h1 className="text-5xl md:text-6xl font-bold text-center text-black mb-4 animate-slide-in-left delay-100" style={{
+          lineHeight:1.4        }}>
+          Local SEO Tactics To<br></br> <span className="text-[#f63436] underline decoration-[#fea930]/30 decoration-8 pt-5">Dominate</span> Your Market
         </h1>
         <p className="text-lg text-center text-zinc-600 max-w-2xl mb-8 animate-slide-in-right delay-200 mt-5">
           Welcome to Iqoniqox where we specialize in revolutionizing your online presence through expert SEO and digital marketing solutions.
         </p>
-        <form className="flex flex-col md:flex-row items-center gap-4 bg-white rounded-full shadow-lg px-6 py-4 w-full max-w-4xl animate-fade-in-up delay-300">
-          <div className="flex flex-col sm:flex-row w-full gap-4">
-            <div className="flex items-center gap-2 flex-1">
-              <span className="text-[#fea930]">🔗</span>
-              <input type="text" placeholder="https://yoursite.com" className="outline-none border-none bg-transparent flex-1 text-zinc-700 py-2 px-2 rounded-full min-w-0" />
-            </div>
-            <div className="flex items-center gap-2 flex-1">
-              <span className="text-[#fea930]">✉️</span>
-              <input type="email" placeholder="youremail@domain.com" className="outline-none border-none bg-transparent flex-1 text-zinc-700 py-2 px-2 rounded-full min-w-0" />
-            </div>
-          </div>
-          <button type="submit" className="bg-[#f63436] text-white font-semibold px-4 py-3 rounded-full flex items-center gap-2 hover:bg-[#fea930] transition-colors w-full sm:w-auto mt-4 sm:mt-0">
-            Analyze Now 
-          </button>
-        </form>
+        
 
 
       </section>
@@ -138,69 +125,70 @@ export default function Home() {
           Our Service
         </span>
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-black mb-8 animate-slide-in-left delay-100" style={{ lineHeight: 1.3 }}>
+        <h2 className="text-4xl md:text-5xl font-bold text-center md:text-center text-black mb-4 animate-slide-in-left delay-100" style={{ lineHeight: 1.4 }}>
           Our Comprehensive Suite Of<br />Digital Marketing <span className="text-[#f63436] underline decoration-[#f63436]/30 decoration-8">Services.</span>
         </h2>
         {/* Service Cards Grid */}
-        <div className="relative w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-25 mb-12 mt-12">
-          {/* Center logo with rings */}
-          <div className="hidden md:block absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0 pointer-events-none">
-            <div className="relative flex items-center justify-center">
-              <div className="absolute w-[340px] h-[340px] rounded-full bg-[#fea93030] opacity-60 animate-spin-slow" />
-              <div className="absolute w-[220px] h-[220px] rounded-full bg-[#f634364d] opacity-40 animate-pulse" />
-              <div className="absolute w-[120px] h-[120px] rounded-full bg-[#0053a19c] opacity-30 animate-float" />
-              <span className="w-24 h-24 z-10 flex items-center justify-center animate-center-transform">
-                <div className="absolute w-[120px] h-[120px] rounded-full bg-[#ffe3ef] opacity-30 animate-float" />
-              </span>
+        <div className="relative w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-30 mb-12 mt-12">
+          {/* Animated background behind cards */}
+          <div className="absolute inset-0 -z-10 pointer-events-none">
+            <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+              <div className="w-[420px] h-[520px] rounded-full bg-gradient-to-tr from-[#fea93030] via-[#f634364d] to-[#0053a19c] opacity-40 animate-spin-slow" />
+            </div>
+            <div className="absolute left-1/4 top-1/4">
+              <div className="w-[180px] h-[180px] rounded-full bg-[#ffe3ef] opacity-30 animate-float" />
+            </div>
+            <div className="absolute right-1/4 bottom-1/4">
+              <div className="w-[120px] h-[120px] rounded-full bg-[#fea930] opacity-20 animate-pulse" />
             </div>
           </div>
           {/* Card 1 */}
-          <div className="relative z-10 bg-white rounded-xl shadow p-8 flex flex-col gap-2 animate-fade-in-up delay-100">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#ffe3ef] text-[#f63436]">
-                <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#f63436" strokeWidth="2" /><path d="M15 10l-4 4-2-2" stroke="#f63436" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /><circle cx="12" cy="12" r="3" stroke="#f63436" strokeWidth="2" /></svg>
+          <div className="relative z-10 bg-white rounded-2xl shadow-lg p-10 flex flex-col gap-4 border border-[#ffe3ef] hover:shadow-2xl transition-all duration-300 animate-fade-in-up delay-100 group">
+            <div className="flex items-center gap-4 mb-4">
+              <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-[#ffe3ef] to-[#fea930] text-[#f63436] shadow-lg">
+                <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#f63436" strokeWidth="2" /><path d="M15 10l-4 4-2-2" stroke="#f63436" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /><circle cx="12" cy="12" r="3" stroke="#f63436" strokeWidth="2" /></svg>
               </span>
-              <span className="text-4xl font-bold text-[#ffe3ef] ml-auto">01</span>
+              <span className="text-3xl font-extrabold text-[#f63436] ml-auto group-hover:text-[#fea930] transition-colors">01</span>
             </div>
-            <div className="font-bold text-black">Search Engine Optimization</div>
-            <div className="text-sm text-zinc-600 mb-2">Our team of experts will optimize your site's on-page elements, create high-quality content, and build authoritative backlinks to boost your rankings attract.</div>
-            <a href="#" className="text-sm font-semibold text-[#f63436] hover:underline flex items-center gap-1">Learn More <span>→</span></a>
+            <div className="font-extrabold text-lg text-black mb-2">Search Engine Optimization</div>
+            <div className="text-base text-zinc-600 mb-4">Our team of experts will optimize your site's on-page elements, create high-quality content, and build authoritative backlinks to boost your rankings attract.</div>
+            <a href="#" className="text-base font-semibold text-[#f63436] hover:text-[#fea930] hover:underline flex items-center gap-2 transition-colors">Learn More <span>→</span></a>
           </div>
           {/* Card 2 */}
-          <div className="relative z-10 bg-white rounded-xl shadow p-8 flex flex-col gap-2 animate-fade-in-up delay-200">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#ffe3ef] text-[#f63436]">
-                <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" stroke="#f63436" strokeWidth="2" /><path d="M8 8h8M8 12h8M8 16h4" stroke="#f63436" strokeWidth="2" strokeLinecap="round" /></svg>
+          <div className="relative z-10 bg-white rounded-2xl shadow-lg p-10 flex flex-col gap-4 border border-[#ffe3ef] hover:shadow-2xl transition-all duration-300 animate-fade-in-up delay-200 group">
+            <div className="flex items-center gap-4 mb-4">
+              <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-[#ffe3ef] to-[#fea930] text-[#f63436] shadow-lg">
+                <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" stroke="#f63436" strokeWidth="2" /><path d="M8 8h8M8 12h8M8 16h4" stroke="#f63436" strokeWidth="2" strokeLinecap="round" /></svg>
               </span>
-              <span className="text-4xl font-bold text-[#ffe3ef] ml-auto">02</span>
+              <span className="text-3xl font-extrabold text-[#f63436] ml-auto group-hover:text-[#fea930] transition-colors">02</span>
             </div>
-            <div className="font-bold text-black">Pay-Per-Click(PPC) Advertising</div>
-            <div className="text-sm text-zinc-600 mb-2">Maximize your ROI with strategic PPC campaigns tailored to your business objectives. Whether you're looking to increase brand awareness.</div>
-            <a href="#" className="text-sm font-semibold text-[#f63436] hover:underline flex items-center gap-1">Learn More <span>→</span></a>
+            <div className="font-extrabold text-lg text-black mb-2">Pay-Per-Click(PPC) Advertising</div>
+            <div className="text-base text-zinc-600 mb-4">Maximize your ROI with strategic PPC campaigns tailored to your business objectives. Whether you're looking to increase brand awareness.</div>
+            <a href="#" className="text-base font-semibold text-[#f63436] hover:text-[#fea930] hover:underline flex items-center gap-2 transition-colors">Learn More <span>→</span></a>
           </div>
           {/* Card 3 */}
-          <div className="relative z-10 bg-white rounded-xl shadow p-8 flex flex-col gap-2 animate-fade-in-up delay-300">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#ffe3ef] text-[#f63436]">
-                <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#f63436" strokeWidth="2" /><path d="M8 12h8M12 8v8" stroke="#f63436" strokeWidth="2" strokeLinecap="round" /></svg>
+          <div className="relative z-10 bg-white rounded-2xl shadow-lg p-10 flex flex-col gap-4 border border-[#ffe3ef] hover:shadow-2xl transition-all duration-300 animate-fade-in-up delay-300 group">
+            <div className="flex items-center gap-4 mb-4">
+              <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-[#ffe3ef] to-[#fea930] text-[#f63436] shadow-lg">
+                <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#f63436" strokeWidth="2" /><path d="M8 12h8M12 8v8" stroke="#f63436" strokeWidth="2" strokeLinecap="round" /></svg>
               </span>
-              <span className="text-4xl font-bold text-[#ffe3ef] ml-auto">03</span>
+              <span className="text-3xl font-extrabold text-[#f63436] ml-auto group-hover:text-[#fea930] transition-colors">03</span>
             </div>
-            <div className="font-bold text-black">Social Media Marketing</div>
-            <div className="text-sm text-zinc-600 mb-2">Engage with your audience, build brand loyalty, drive conversions through strategic social media marketing. From content creation and community management.</div>
-            <a href="#" className="text-sm font-semibold text-[#f63436] hover:underline flex items-center gap-1">Learn More <span>→</span></a>
+            <div className="font-extrabold text-lg text-black mb-2">Social Media Marketing</div>
+            <div className="text-base text-zinc-600 mb-4">Engage with your audience, build brand loyalty, drive conversions through strategic social media marketing. From content creation and community management.</div>
+            <a href="#" className="text-base font-semibold text-[#f63436] hover:text-[#fea930] hover:underline flex items-center gap-2 transition-colors">Learn More <span>→</span></a>
           </div>
           {/* Card 4 */}
-          <div className="relative z-10 bg-white rounded-xl shadow p-8 flex flex-col gap-2 animate-fade-in-up delay-400">
-            <div className="flex items-center gap-2 mb-2">
-              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#ffe3ef] text-[#f63436]">
-                <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" stroke="#f63436" strokeWidth="2" /><path d="M8 8h8M8 12h8M8 16h4" stroke="#f63436" strokeWidth="2" strokeLinecap="round" /></svg>
+          <div className="relative z-10 bg-white rounded-2xl shadow-lg p-10 flex flex-col gap-4 border border-[#ffe3ef] hover:shadow-2xl transition-all duration-300 animate-fade-in-up delay-400 group">
+            <div className="flex items-center gap-4 mb-4">
+              <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-tr from-[#ffe3ef] to-[#fea930] text-[#f63436] shadow-lg">
+                <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" stroke="#f63436" strokeWidth="2" /><path d="M8 8h8M8 12h8M8 16h4" stroke="#f63436" strokeWidth="2" strokeLinecap="round" /></svg>
               </span>
-              <span className="text-4xl font-bold text-[#ffe3ef] ml-auto">04</span>
+              <span className="text-3xl font-extrabold text-[#f63436] ml-auto group-hover:text-[#fea930] transition-colors">04</span>
             </div>
-            <div className="font-bold text-black">Content Marketing</div>
-            <div className="text-sm text-zinc-600 mb-2">Nurture leads, drive conversions, and build customer loyalty with targeted email marketing campaigns. From automated drip campaigns & personalized newsletters.</div>
-            <a href="#" className="text-sm font-semibold text-[#f63436] hover:underline flex items-center gap-1">Learn More <span>→</span></a>
+            <div className="font-extrabold text-lg text-black mb-2">Content Marketing</div>
+            <div className="text-base text-zinc-600 mb-4">Nurture leads, drive conversions, and build customer loyalty with targeted email marketing campaigns. From automated drip campaigns & personalized newsletters.</div>
+            <a href="#" className="text-base font-semibold text-[#f63436] hover:text-[#fea930] hover:underline flex items-center gap-2 transition-colors">Learn More <span>→</span></a>
           </div>
         </div>
         {/* View More Button */}
@@ -220,13 +208,15 @@ export default function Home() {
           Case Study
         </span>
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-black mb-12">
+        <h2 className="text-4xl md:text-5xl font-bold text-center md:text-center text-black mb-4 animate-slide-in-left delay-100" style={{
+          lineHeight:1.4
+        }}>
           Our Handpicked Digital<br />Marketing <span className="text-[#f63436] underline decoration-[#f63436]/30 decoration-8">Case Study</span>
         </h2>
         {/* Cards Row */}
-        <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch w-full max-w-6xl">
+        <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch w-full max-w-7xl mt-15">
           {/* Card 1 */}
-          <div className="relative group rounded-2xl overflow-hidden shadow-lg transition-all duration-500 w-full md:min-w-[180px] md:max-w-[180px] h-[340px] md:hover:min-w-[340px] md:hover:max-w-[340px] md:hover:z-20 md:hover:shadow-2xl md:hover:scale-105">
+          <div className="relative group rounded-2xl overflow-hidden shadow-lg transition-all duration-500 w-full md:min-w-[300px] md:max-w-[260px] h-[340px] md:hover:min-w-[400px] md:hover:max-w-[400px] md:hover:z-20 md:hover:shadow-2xl md:hover:scale-105">
             <img src="https://seoc-html-v2.vercel.app/assets/img/all-images/case-img1.png" alt="Website Design & Development" className="object-cover w-full h-full" />
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <span className="absolute left-2 top-2 bg-[#ffe3ef] text-[#f63436] px-3 py-1 rounded-full text-xs font-semibold">Website Design & Development</span>
@@ -234,7 +224,7 @@ export default function Home() {
             <span className="absolute left-2 bottom-4 text-white text-lg font-bold md:hidden">Website Design & Development</span>
           </div>
           {/* Card 2 */}
-          <div className="relative group rounded-2xl overflow-hidden shadow-lg transition-all duration-500 w-full md:min-w-[180px] md:max-w-[180px] h-[340px] md:hover:min-w-[340px] md:hover:max-w-[340px] md:hover:z-20 md:hover:shadow-2xl md:hover:scale-105">
+          <div className="relative group rounded-2xl overflow-hidden shadow-lg transition-all duration-500 w-full md:min-w-[180px] md:max-w-[260px] h-[340px] md:hover:min-w-[340px] md:hover:max-w-[340px] md:hover:z-20 md:hover:shadow-2xl md:hover:scale-105">
             <img src="https://seoc-html-v2.vercel.app/assets/img/all-images/case-img2.png" alt="SEO" className="object-cover w-full h-full" />
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <span className="absolute left-2 top-2 bg-[#ffe3ef] text-[#f63436] px-3 py-1 rounded-full text-xs font-semibold">SEO</span>
@@ -242,7 +232,7 @@ export default function Home() {
             <span className="absolute left-2 bottom-4 text-white text-lg font-bold md:hidden">SEO</span>
           </div>
           {/* Card 3 */}
-          <div className="relative group rounded-2xl overflow-hidden shadow-lg transition-all duration-500 w-full md:min-w-[180px] md:max-w-[180px] h-[340px] md:hover:min-w-[340px] md:hover:max-w-[340px] md:hover:z-20 md:hover:shadow-2xl md:hover:scale-105">
+          <div className="relative group rounded-2xl overflow-hidden shadow-lg transition-all duration-500 w-full md:min-w-[180px] md:max-w-[260px] h-[340px] md:hover:min-w-[340px] md:hover:max-w-[340px] md:hover:z-20 md:hover:shadow-2xl md:hover:scale-105">
             <img src="https://seoc-html-v2.vercel.app/assets/img/all-images/case-img3.png" alt="PPC Advertising" className="object-cover w-full h-full" />
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <span className="absolute left-5 top-2 bg-[#ffe3ef] text-[#f63436] px-3 py-1 rounded-full text-xs font-semibold">PPC Advertising</span>
@@ -275,14 +265,16 @@ export default function Home() {
         className={`relative py-24 px-4 bg-[#f7f8fa] flex flex-col items-center transition-all duration-700 ${workInView ? "animate-fade-in-up" : "opacity-0 translate-y-10"}`}
       >
         {/* Badge */}
-        <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#ffe3ef] text-[#f63436] font-medium text-sm mb-4 animate-fade-in-up">
+        <span className="inline-flex items-start gap-2 px-4 py-2 rounded-full bg-[#ffe3ef] text-[#f63436] font-medium text-sm mb-4 animate-fade-in-up">
           <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M12 2L15 8H9L12 2Z" fill="#f63436" /><circle cx="12" cy="14" r="6" fill="#f63436" opacity=".2" /></svg>
           Work Process
         </span>
-        <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl mb-12 animate-fade-in-up">
+        <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mb-12 animate-fade-in-up">
           {/* Left: Heading and content */}
           <div className="flex-1 flex flex-col items-start md:items-start">
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-4 animate-slide-in-left delay-100">
+            <h2 className="text-4xl md:text-5xl font-bold text-left md:text-left text-black mb-4 animate-slide-in-left delay-100" style={{
+          lineHeight:1.4
+        }}>
               Iqoniqox Your Path to<br />SEO & Digital<br />
               <span className="text-[#f63436] underline decoration-[#f63436]/30 decoration-8">Marketing Success</span>
             </h2>
@@ -299,7 +291,7 @@ export default function Home() {
           </div>
         </div>
         {/* Cards Row */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl mt-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-7xl mt-8">
           {/* Card 1 */}
           <div className="bg-white rounded-xl shadow p-8 flex flex-col items-center animate-fade-in-up delay-100">
             <span className="mb-4 bg-[#ffe3ef] rounded-full p-4 text-[#f63436]">
@@ -331,22 +323,21 @@ export default function Home() {
       </section>
 
       {/* Pricing & Plan Section */}
-      <section
+      {/* <section
         ref={pricingRef}
         className={`relative py-24 px-4 bg-white flex flex-col items-center transition-all duration-700 ${pricingInView ? "animate-fade-in-up" : "opacity-0 translate-y-10"}`}
       >
-        {/* Badge */}
         <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#ffe3ef] text-[#f63436] font-medium text-sm mb-4 animate-fade-in-up">
           <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M12 2L15 8H9L12 2Z" fill="#f63436" /><circle cx="12" cy="14" r="6" fill="#f63436" opacity=".2" /></svg>
           Pricing & Plan
         </span>
-        {/* Heading */}
+      
         <h2 className="text-3xl md:text-4xl font-bold text-center text-black mb-12 animate-fade-in-up">
           Iqoniqox <span className="text-[#f63436] underline decoration-[#f63436]/30 decoration-8">Pricing Plan</span>
         </h2>
-        {/* Cards Row */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl animate-fade-in-up">
-          {/* Basic Plan */}
+      
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-7xl animate-fade-in-up">
+      
           <div className="bg-[#f7f8fa] rounded-xl shadow p-8 flex flex-col items-center animate-fade-in-up delay-100 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
             <div className="font-bold text-xl text-black mb-2">Basic Plan - Starter</div>
             <div className="text-sm text-zinc-600 mb-4 text-center">Our SEO and Digital Marketing agency offers a range of pricing plans tailored</div>
@@ -365,7 +356,6 @@ export default function Home() {
             </div>
             <div className="text-xs text-zinc-500 text-center">Small businesses or startups looking to establish their online presence.</div>
           </div>
-          {/* Standard Plan - Highlighted */}
           <div className="bg-[#f63436] rounded-xl shadow-lg p-8 flex flex-col items-center animate-fade-in-up delay-200 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
             <div className="font-bold text-xl text-white mb-2">Standard Plan - Growth</div>
             <div className="text-sm text-white mb-4 text-center">Our SEO and Digital Marketing agency offers a range of pricing plans tailored</div>
@@ -384,7 +374,6 @@ export default function Home() {
             </div>
             <div className="text-xs text-white text-center">Small businesses or startups looking to establish their online presence.</div>
           </div>
-          {/* Premium Plan */}
           <div className="bg-[#f7f8fa] rounded-xl shadow p-8 flex flex-col items-center animate-fade-in-up delay-300 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:-translate-y-2">
             <div className="font-bold text-xl text-black mb-2">Premium Plan - Pro</div>
             <div className="text-sm text-zinc-600 mb-4 text-center">Our SEO and Digital Marketing agency offers a range of pricing plans tailored</div>
@@ -404,7 +393,7 @@ export default function Home() {
             <div className="text-xs text-zinc-500 text-center">Small businesses or startups looking to establish their online presence.</div>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
       {/* Testimonials Carousel Section */}
@@ -418,7 +407,9 @@ export default function Home() {
           Testimonials
         </span>
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-black mb-12 animate-fade-in-up">
+        <h2 className="text-4xl md:text-5xl font-bold text-left md:text-left text-black mb-4 animate-slide-in-left delay-100" style={{
+          lineHeight:1.4
+        }}>
           "What Our <span className="text-[#f63436] underline decoration-[#f63436]/30 decoration-8">Client Say</span>"
         </h2>
         {/* Carousel */}
@@ -441,7 +432,7 @@ export default function Home() {
           "Insights & Updates <span className="text-[#f63436] underline decoration-[#f63436]/30 decoration-8">Digital Marketing</span>"
         </h2>
         {/* Blog Cards Row */}
-        <div className="flex flex-row gap-8 justify-center items-stretch w-full max-w-6xl">
+        <div className="flex flex-row gap-8 justify-center items-stretch w-full max-w-7xl">
           {/* Card 1 */}
           <div className="relative rounded-2xl overflow-hidden shadow-lg bg-[#f7f8fa] p-8 flex flex-col w-full max-w-[540px] animate-fade-in-up">
             <div className="flex items-center gap-4 mb-4 text-zinc-500 text-sm">

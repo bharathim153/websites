@@ -17,7 +17,7 @@ export default function AboutUs() {
           <div className="absolute left-[-60px] top-24 w-40 h-40 bg-[#a78bfa] rounded-full shadow-2xl opacity-80 blur-xl z-0" />
           {/* Decorative right pink asterisk */}
           <div className="absolute right-8 top-40 z-0 text-5xl select-none" style={{ color: '#f472b6' }}>*</div>
-          <div className="relative z-10 w-full max-w-5xl flex flex-col items-center">
+          <div className="relative z-10 w-full max-w-7xl flex flex-col items-center">
             {/* Breadcrumb */}
             <nav className="flex items-center space-x-2 text-gray-700 text-base mt-8 mb-4">
               <a href="/" className="hover:underline">Home</a>
@@ -32,7 +32,7 @@ export default function AboutUs() {
         </main>
 
         {/* Section 1: Left Image, Right Content */}
-        <section className="flex flex-col md:flex-row items-center justify-center max-w-5xl mx-auto my-12 bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+        <section className="flex flex-col md:flex-row items-center justify-center max-w-7xl mx-auto my-12 bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
           <div className="md:w-1/2 w-full h-64 md:h-auto flex items-center justify-center bg-gray-100">
             <img src="/logo.png" alt="About us 1" className="object-contain h-48" />
           </div>
@@ -44,7 +44,7 @@ export default function AboutUs() {
         </section>
 
         {/* Section 2: Left Image, Right Content */}
-        <section className="flex flex-col md:flex-row items-center justify-center max-w-5xl mx-auto my-12 bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+        <section className="flex flex-col md:flex-row items-center justify-center max-w-7xl mx-auto my-12 bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
           <div className="md:w-1/2 w-full h-64 md:h-auto flex items-center justify-center bg-gray-100">
             <img src="/window.svg" alt="About us 2" className="object-contain h-48" />
           </div>

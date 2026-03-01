@@ -12,7 +12,7 @@ export default function ContactUs() {
                 <div className="absolute left-[-60px] top-24 w-40 h-40 bg-[#a78bfa] rounded-full shadow-2xl opacity-80 blur-xl z-0" />
                 {/* Decorative right pink asterisk */}
                 <div className="absolute right-8 top-40 z-0 text-5xl select-none" style={{ color: '#f472b6' }}>*</div>
-                <div className="relative z-10 w-full max-w-5xl flex flex-col items-center">
+                <div className="relative z-10 w-full max-w-7xl flex flex-col items-center">
                     {/* Breadcrumb */}
                     <nav className="flex items-center space-x-2 text-gray-700 text-base mt-8 mb-4">
                         <a href="/" className="hover:underline">Home</a>

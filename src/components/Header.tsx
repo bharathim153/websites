@@ -17,7 +17,7 @@ const Header = () => {
           <li className="cursor-pointer text-black"><a href="/about-us">About</a></li>
           <li className="relative group cursor-pointer text-black"><a href="/services">Services</a></li>
           <li className="relative group cursor-pointer text-black"><a href="/blogs">Blogs</a></li>
-          <li className="relative group cursor-pointer text-black"><a href="/pages">Pages</a></li>
+          {/* <li className="relative group cursor-pointer text-black"><a href="/pages">Pages</a></li> */}
           <li className="cursor-pointer text-black"><a href="/contact-us">Contact Us</a></li>
         </ul>
       </nav>
