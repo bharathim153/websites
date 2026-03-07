@@ -39,7 +39,7 @@ const faqs = [
 const FAQSection = () => {
   const [open, setOpen] = useState(Array(faqs.length).fill(false));
 
-  const toggle = idx => {
+  const toggle = (idx: number) => {
     setOpen(open => open.map((v, i) => (i === idx ? !v : v)));
   };
 
