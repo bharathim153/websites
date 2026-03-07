@@ -34,18 +34,24 @@ const Header = () => {
       {/* Mobile Nav Drawer */}
       <div className={`fixed top-0 left-0 h-full w-[350px] bg-white z-30 shadow-lg transition-transform duration-300 ${menuOpen ? 'translate-x-0' : '-translate-x-full'}`} style={{maxWidth:'100vw'}}>
         <div className="flex items-center justify-between px-6 py-4">
-          <img src="/logo.png" alt="SEOC Logo" className="h-10" />
+          <img src="/logo.png" alt="SEOC Logo" className="h-[150px] w-[100%]" />
           <button className="text-2xl text-black" onClick={() => setMenuOpen(false)} aria-label="Close menu">
             <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M6 6l12 12M6 18L18 6" stroke="#000" strokeWidth="2" strokeLinecap="round" /></svg>
           </button>
         </div>
         <nav className="flex flex-col px-6 gap-2">
           <ul className="flex flex-col gap-2 text-lg font-medium">
-            <li className="flex items-center justify-between py-2"><a href="/" onClick={() => setMenuOpen(false)}>Home</a><span className="text-xl">+</span></li>
-            <li className="flex items-center justify-between py-2"><a href="/about-us" onClick={() => setMenuOpen(false)}>About</a><span className="text-xl">+</span></li>
-            <li className="flex items-center justify-between py-2"><a href="/services" onClick={() => setMenuOpen(false)}>Services</a><span className="text-xl">+</span></li>
-            <li className="flex items-center justify-between py-2"><a href="/blogs" onClick={() => setMenuOpen(false)}>Blogs</a><span className="text-xl">+</span></li>
-            <li className="flex items-center justify-between py-2"><a href="/pages" onClick={() => setMenuOpen(false)}>Pages</a><span className="text-xl">+</span></li>
+            <li className="flex items-center justify-between py-2"><a href="/" onClick={() => setMenuOpen(false)}>Home</a>
+            {/* <span className="text-xl">+</span> */}
+            </li>
+            <li className="flex items-center justify-between py-2"><a href="/about-us" onClick={() => setMenuOpen(false)}>About</a>
+            {/* <span className="text-xl">+</span> */}
+            </li>
+            <li className="flex items-center justify-between py-2"><a href="/services" onClick={() => setMenuOpen(false)}>Services</a>
+            {/* <span className="text-xl">+</span> */}
+            </li>
+            <li className="flex items-center justify-between py-2"><a href="/blogs" onClick={() => setMenuOpen(false)}>Blogs</a>{/* <span className="text-xl">+</span> */}</li>
+         
             <li className="flex items-center justify-between py-2"><a href="/contact-us" onClick={() => setMenuOpen(false)}>Contact Us</a></li>
           </ul>
           <a href="#" className="bg-[#4B2ED5] text-white font-semibold px-8 py-3 rounded-full flex items-center justify-center gap-2 mt-6 hover:bg-[#fea930] transition-colors">
@@ -71,7 +77,7 @@ const Header = () => {
         </div>
       </div>
       {/* Desktop CTA */}
-      <a href="#" className="hidden md:flex bg-[#f63436] text-white font-semibold px-8 py-3 rounded-full items-center gap-2 hover:bg-[#fea930] transition-colors">
+      <a href="/contact-us" className="hidden md:flex bg-[#f63436] text-white font-semibold px-8 py-3 rounded-full items-center gap-2 hover:bg-[#fea930] transition-colors" >
         Get In Touch <span className="ml-1">↗</span>
       </a>
       {/* Overlay for mobile menu */}

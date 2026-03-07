@@ -27,27 +27,27 @@ const logos = [
       </svg>
     ),
   },
-  {
-    name: 'Microsoft',
-    svg: (
-      <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="0" y="10" width="10" height="10" fill="white"/>
-        <rect x="12" y="10" width="10" height="10" fill="white"/>
-        <rect x="0" y="22" width="10" height="10" fill="white"/>
-        <rect x="12" y="22" width="10" height="10" fill="white"/>
-        <text x="28" y="30" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="32" fill="white">Microsoft</text>
-      </svg>
-    ),
-  },
-  {
-    name: 'Airbnb',
-    svg: (
-      <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M50 10 Q55 20 50 30 Q45 20 50 10 Z" stroke="white" strokeWidth="2" fill="none"/>
-        <text x="60" y="30" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="32" fill="white">airbnb</text>
-      </svg>
-    ),
-  },
+  // {
+  //   name: 'Microsoft',
+  //   svg: (
+  //     <svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  //       <rect x="0" y="10" width="10" height="10" fill="white"/>
+  //       <rect x="12" y="10" width="10" height="10" fill="white"/>
+  //       <rect x="0" y="22" width="10" height="10" fill="white"/>
+  //       <rect x="12" y="22" width="10" height="10" fill="white"/>
+  //       <text x="28" y="30" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="32" fill="white">Microsoft</text>
+  //     </svg>
+  //   ),
+  // },
+  // {
+  //   name: 'Airbnb',
+  //   svg: (
+  //     <svg width="100" height="40" viewBox="0 0 100 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  //       <path d="M50 10 Q55 20 50 30 Q45 20 50 10 Z" stroke="white" strokeWidth="2" fill="none"/>
+  //       <text x="60" y="30" fontFamily="Arial, Helvetica, sans-serif" fontWeight="bold" fontSize="32" fill="white">airbnb</text>
+  //     </svg>
+  //   ),
+  // },
 ];
 
 const VISIBLE_COUNT = 4;
@@ -85,22 +85,22 @@ const TrustedBySection = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 px-4">
         {/* Left: Text */}
         <div className="flex flex-col items-start md:items-start md:w-1/4 text-white mb-6 md:mb-0">
-          <span className="text-lg font-semibold">Trusted by</span>
-          <span className="text-lg font-semibold">Top Companies</span>
+          <span className="text-4xl md:text-5xl font-bold text-center md:text-center text-white mb-4 animate-slide-in-left delay-100">Trusted by</span>
+          <span className="text-4xl md:text-3xl font-bold text-center md:text-center text-white mb-4 animate-slide-in-left delay-100">Top Companies</span>
         </div>
         {/* Right: Carousel */}
         <div className="relative w-full md:w-3/4 flex items-center justify-center">
           <button
             aria-label="Previous"
             onClick={prev}
-            className="absolute left-0 z-10 bg-[#4B2ED5] hover:bg-[#3a22a3] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-md focus:outline-none"
+            className="absolute left-0 z-10 bg-[#4B2ED5] hover:bg-[#3a22a3] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-md focus:outline-none d-none md:flex"
             style={{ top: '50%', transform: 'translateY(-50%)' }}
           >
             <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </button>
-          <div className="flex items-center gap-12 md:gap-16 w-full justify-center overflow-hidden">
+          <div className="flex items-center gap-12 md:gap-16 w-full justify-center md:overflow-hidden">
             {getVisible().map((logo, idx) => (
-              <div key={idx} className="flex-shrink-0 flex items-center justify-center" style={{ minWidth: 100, minHeight: 40 }}>
+              <div key={idx} className="flex-shrink-0 flex items-center justify-center md:w-[100px] md:h-[40px] w-[50px] h-[20px]" style={{ minWidth: 100, minHeight: 40 }}>
                 {logo.svg}
               </div>
             ))}
@@ -108,7 +108,7 @@ const TrustedBySection = () => {
           <button
             aria-label="Next"
             onClick={next}
-            className="absolute right-0 z-10 bg-[#4B2ED5] hover:bg-[#3a22a3] text-white rounded-full w-10 h-10 flex items-center justify-center shadow-md focus:outline-none"
+            className="absolute right-0 z-10 bg-[#4B2ED5] hover:bg-[#3a22a3] text-white rounded-full w-10 h-10 items-center justify-center shadow-md focus:outline-none hidden md:flex"
             style={{ top: '50%', transform: 'translateY(-50%)' }}
           >
             <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>

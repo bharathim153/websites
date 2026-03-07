@@ -32,7 +32,7 @@ export default function ContactUs() {
                         <h2 className="text-4xl font-bold mb-4" style={{color:'#fea930'}}>Get in Touch with SEOC We Value Your Connection</h2>
                         <p className="text-gray-700 mb-6">Our dedicated team is committed to providing prompt and effective support to ensure your needs are met. We believe in open communication and are always ready to listen. Reach out to us via phone, email, or live chat, or visit our office during business hours.</p>
                         <div className="flex gap-8 mb-6">
-                            <div className="flex items-center gap-3">
+                            <div className="flex items-center gap-3 flex-wrap">
                                 <span className="bg-[#ede9fe] p-3 rounded-full">
                                     {/* Phone icon */}
                                     <svg width="32" height="32" fill="#a78bfa" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1A19 19 0 013 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.2 2.2z" /></svg>
@@ -42,7 +42,7 @@ export default function ContactUs() {
                                     <div className="font-bold text-lg">123-456-7890</div>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-3">
+                            <div className="flex items-center gap-3 flex-wrap">
                                 <span className="bg-[#ede9fe] p-3 rounded-full">
                                     {/* Mail icon */}
                                     <svg width="32" height="32" fill="#a78bfa" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18V8.99l8 7 8-7V18H4z" /></svg>

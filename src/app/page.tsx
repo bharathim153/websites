@@ -65,22 +65,25 @@ export default function Home() {
         <div className="flex flex-col items-center md:items-start max-w-xl z-10">
           {/* Circular text badge */}
           <div className="relative flex items-center justify-center mb-10">
-            <Link href="/about" passHref legacyBehavior>
-              <a tabIndex={0} aria-label="About Iqoniqox" className="block focus:outline-none focus:ring-2 focus:ring-[#f63436] rounded-full p-2">
-                <svg width="110" height="110" viewBox="0 0 110 110" className="absolute left-1/2 -translate-x-1/2 top-0 animate-spin-slow cursor-pointer animate-center-scale" style={{ zIndex: 1 }}>
-                  <circle cx="55" cy="55" r="52" fill="#fea930" />
-                  <defs>
-                    <path id="circlePath" d="M55,55 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0" />
-                  </defs>
-                  <text fontSize="12" fill="#fff" fontFamily="Arial" letterSpacing="2">
-                    <textPath xlinkHref="#circlePath" startOffset="20">
-                      BRAND WITH DEMOUI BUILD A SUCCESS
-                    </textPath>
-                  </text>
-                  <text x="55" y="65" textAnchor="middle" fontSize="22" fill="#f63436" fontFamily="Arial">↗</text>
-                </svg>
-                <span className="sr-only">About Iqoniqox</span>
-              </a>
+            <Link
+              href="/about"
+              tabIndex={0}
+              aria-label="About Iqoniqox"
+              className="block focus:outline-none focus:ring-2 focus:ring-[#f63436] rounded-full p-2"
+            >
+              <svg width="110" height="110" viewBox="0 0 110 110" className="absolute left-1/2 -translate-x-1/2 top-0 animate-spin-slow cursor-pointer animate-center-scale" style={{ zIndex: 1 }}>
+                <circle cx="55" cy="55" r="52" fill="#fea930" />
+                <defs>
+                  <path id="circlePath" d="M55,55 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0" />
+                </defs>
+                <text fontSize="12" fill="#fff" fontFamily="Arial" letterSpacing="2">
+                  <textPath xlinkHref="#circlePath" startOffset="20">
+                    BRAND WITH DEMOUI BUILD A SUCCESS
+                  </textPath>
+                </text>
+                <text x="55" y="65" textAnchor="middle" fontSize="22" fill="#f63436" fontFamily="Arial">↗</text>
+              </svg>
+              <span className="sr-only">About Iqoniqox</span>
             </Link>
             <div className="w-[110px] h-[110px]" />
           </div>
@@ -133,7 +136,7 @@ export default function Home() {
           {/* Animated background behind cards */}
           <div className="absolute inset-0 -z-10 pointer-events-none">
             <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-              <div className="w-[420px] h-[520px] rounded-full bg-gradient-to-tr from-[#fea93030] via-[#f634364d] to-[#0053a19c] opacity-40 animate-spin-slow" />
+              <div className="w-[300px] h-[300px] md:w-[420px] md:h-[520px] rounded-full bg-gradient-to-tr from-[#fea93030] via-[#f634364d] to-[#0053a19c] opacity-40 animate-spin-slow" />
             </div>
             <div className="absolute left-1/4 top-1/4">
               <div className="w-[180px] h-[180px] rounded-full bg-[#ffe3ef] opacity-30 animate-float" />
@@ -281,7 +284,7 @@ export default function Home() {
             <p className="text-lg text-zinc-600 mb-6 animate-slide-in-right delay-200">
               From increasing your website's visibility on search engines to engaging with your audience on social media,
             </p>
-            <button className="bg-[#f63436] text-white font-semibold px-8 py-3 rounded-full flex items-center gap-2 hover:bg-[#fea930] transition-colors animate-fade-in-up delay-300">
+            <button className="bg-[#f63436] text-white font-semibold px-8 py-3 rounded-full flex items-center gap-2 hover:bg-[#fea930] transition-colors animate-fade-in-up delay-300 mb-5">
               Learn More <span className="ml-1">↗</span>
             </button>
           </div>
@@ -432,9 +435,9 @@ export default function Home() {
           "Insights & Updates <span className="text-[#f63436] underline decoration-[#f63436]/30 decoration-8">Digital Marketing</span>"
         </h2>
         {/* Blog Cards Row */}
-        <div className="flex flex-row gap-8 justify-center items-stretch w-full max-w-7xl">
+        <div className="flex md:flex-row flex-col gap-8 justify-center items-stretch w-full md:max-w-7xl">
           {/* Card 1 */}
-          <div className="relative rounded-2xl overflow-hidden shadow-lg bg-[#f7f8fa] p-8 flex flex-col w-full max-w-[540px] animate-fade-in-up">
+          <div className="relative rounded-2xl overflow-hidden shadow-lg bg-[#f7f8fa] p-8 flex flex-col w-full md:max-w-[540px] animate-fade-in-up">
             <div className="flex items-center gap-4 mb-4 text-zinc-500 text-sm">
               <span className="flex items-center gap-1"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#222" strokeWidth="2" /><path d="M12 8v4l2 2" stroke="#222" strokeWidth="2" strokeLinecap="round" /></svg> John Doe</span>
               <span className="flex items-center gap-1"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" stroke="#222" strokeWidth="2" /><path d="M8 8h8M8 12h8M8 16h4" stroke="#222" strokeWidth="2" strokeLinecap="round" /></svg> 12 Feb 2024</span>
@@ -447,7 +450,7 @@ export default function Home() {
             </div>
           </div>
           {/* Card 2 */}
-          <div className="relative rounded-2xl overflow-hidden shadow-lg bg-[#f7f8fa] p-8 flex flex-col w-full max-w-[540px] animate-fade-in-up">
+          <div className="relative rounded-2xl overflow-hidden shadow-lg bg-[#f7f8fa] p-8 flex flex-col w-full md:max-w-[540px] animate-fade-in-up">
             <div className="flex items-center gap-4 mb-4 text-zinc-500 text-sm">
               <span className="flex items-center gap-1"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#222" strokeWidth="2" /><path d="M12 8v4l2 2" stroke="#222" strokeWidth="2" strokeLinecap="round" /></svg> John Doe</span>
               <span className="flex items-center gap-1"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" stroke="#222" strokeWidth="2" /><path d="M8 8h8M8 12h8M8 16h4" stroke="#222" strokeWidth="2" strokeLinecap="round" /></svg> 12 Feb 2024</span>

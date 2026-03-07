@@ -57,7 +57,7 @@ export default function Footer() {
         {/* Newsletter */}
         <div>
           <div className="font-bold text-xl mb-4 text-black">Subscribe Our Newsletter</div>
-          <form className="flex gap-2">
+          <form className="flex gap-2 flex-wrap">
             <input type="email" placeholder="Enter Your email" className="bg-[#ffe3ef] rounded-full px-4 py-2 text-zinc-700 outline-none border-none flex-1" />
             <button type="submit" className="bg-[#ff0a53] text-white font-semibold px-8 py-2 rounded-full hover:bg-[#fea930] transition-colors">Subscribe</button>
           </form>
